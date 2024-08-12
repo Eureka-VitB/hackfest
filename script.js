@@ -17,20 +17,35 @@ const terminal = document.getElementById('terminal');
                 }
 
                 switch (command.toLowerCase()) {
-                    case 'hackfest':
-                        output = '$ <span>Welcome Choose<br> &emsp; ├───Problem Statement 1<br> &emsp; └───Problem Statement 2</span>';
+                    case 'contact':
+                        output = '$ <span>Reach us at: eureka@vitbhopal.ac.in</span>';
                         break;
-                    case 'problem statement 1':
+                    case 'pwd':
+                        output = '$ <span>HackFest</span>';
+                        break;
+                    case 'ls':
+                        output = '$ <span>. .. ps1.txt ps2.txt</span>';
+                        break;
+                    case 'help':
+                        output = '$ <span>pwd, ls, whoami, clear, cat, submit, contact</span>';
+                        break;
+                    case 'whoami':
+                        output = '$ <span>Eureka Club VIT Bhopal</span>';
+                        break;
+                    case 'hackfest':
+                        output = '$ <span>Welcome Need Help?</span>';
+                        break;
+                    case 'cat ps1.txt':
                         output = '$ <span>Make A FullStack Website for Any Daily life problem that are faced by students within university</span>';
                         break;
-                    case 'problem statement 2':
+                    case 'catn ps2.txt':
                         output = '$ <span>Make A FullStack Website for A Comprehensive University Management Platform</span>';
                         break;
-                    case 'submission link':
-                        output = '$ <span><a href="https://forms.gle/T3JAfa5w5NUT4fZd6">Link</a></span>';
+                    case 'Submit':
+                        window.open("https://forms.gle/T3JAfa5w5NUT4fZd6")
                         break;
                     case 'clear':
-                        terminal.innerHTML = '<p>Eureka$ <span class="input" contenteditable="true"></span></p>';
+                        terminal.innerHTML = '<p>(Vit㉿Eureka)-[~] $ <span class="input" contenteditable="true"></span></p>';
                         terminal.querySelector('.input').focus();
                         return;
                     default:
@@ -38,7 +53,7 @@ const terminal = document.getElementById('terminal');
                 }
 
                 const commandLine = document.createElement('p');
-                commandLine.innerHTML = `Eureka$ <span>${command}</span>`;
+                commandLine.innerHTML = `(Vit㉿Eureka)-[~] $ <span>${command}</span>`;
                 terminal.insertBefore(commandLine, input.parentElement);
 
                 if (output) {
