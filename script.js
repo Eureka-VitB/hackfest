@@ -21,10 +21,10 @@ const terminal = document.getElementById('terminal');
                         output = '$ <span>Welcome Choose<br> &emsp; ├───Problem Statement 1<br> &emsp; └───Problem Statement 2</span>';
                         break;
                     case 'problem statement 1':
-                        output = '$ <span>Make A FullStack Website for Any Daily life problem you face within university</span>';
+                        output = '$ <span>Make A FullStack Website for Any Daily life problem that are faced by students within university</span>';
                         break;
                     case 'problem statement 2':
-                        output = '$ <span>Make A FullStack Website for Any Daily life problem you face within university</span>';
+                        output = '$ <span>Make A FullStack Website for A Comprehensive University Management Platform</span>';
                         break;
                     case 'submission link':
                         output = '$ <span><a href="https://docs.google.com/forms/d/e">Link</a></span>';
