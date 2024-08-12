@@ -27,7 +27,7 @@ const terminal = document.getElementById('terminal');
                         output = '$ <span>Make A FullStack Website for A Comprehensive University Management Platform</span>';
                         break;
                     case 'submission link':
-                        output = '$ <span><a href="https://docs.google.com/forms/d/e">Link</a></span>';
+                        output = '$ <span><a href="https://forms.gle/T3JAfa5w5NUT4fZd6">Link</a></span>';
                         break;
                     case 'clear':
                         terminal.innerHTML = '<p>Eureka$ <span class="input" contenteditable="true"></span></p>';
