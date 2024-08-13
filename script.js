@@ -38,7 +38,7 @@ const terminal = document.getElementById('terminal');
                     case 'cat ps1.txt':
                         output = '$ <span>Make A FullStack Website for Any Daily life problem that are faced by students within university</span>';
                         break;
-                    case 'catn ps2.txt':
+                    case 'cat ps2.txt':
                         output = '$ <span>Make A FullStack Website for A Comprehensive University Management Platform</span>';
                         break;
                     case 'Submit':
